@@ -105,7 +105,7 @@ ARCHITECTURE Structure OF MIPS_Pipeline IS
 	--SIGNAL ALUOp			: STD_LOGIC_VECTOR(1 DOWNTO 0);  --for ALU control unit
 				--picks between sign-extended value and read_data_2
 	--SIGNAL ALU_Src,PC_Src		  : STD_LOGIC; --Input Signals
-	--SIGNAL RegDst		: STD_LOGIC;  -- RegDst picks destination Write-Back Reg
+	--SIGNAL RegDst		: STD_LOGIC;  -- RegDst picks destination Write-Back Register
 	SIGNAL J_immediate : STD_LOGIC_VECTOR(N-7 DOWNTO 0);
 	SIGNAL J_immed_shift	: STD_LOGIC_VECTOR(N-5 DOWNTO 0);
 	SIGNAL Add_const : STD_LOGIC_VECTOR(N-1 DOWNTO 0);
