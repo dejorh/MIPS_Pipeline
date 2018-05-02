@@ -1,0 +1,16 @@
+LIBRARY ieee;						--Provide compiler with access to Library
+USE ieee.std_logic_1164.all;	--Use all contents from package in ieee Library
+USE ieee.std_logic_arith.all;	--Use all contents from package in ieee Library
+USE ieee.std_logic_unsigned.all;	--Use all contents from package in ieee Library
+
+ENTITY Adder32 IS						--Top-Level Entity Declaration%
+	PORT (PC,B			 : IN STD_LOGIC_VECTOR(31 DOWNTO 0);	--Input declaration
+			next_PC		 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0));
+END Adder32;
+
+ARCHITECTURE Behavior OF Adder32 IS 
+BEGIN
+	B <= (2 => '1',
+			OTHERS => '0');		
+	next_PC <= PC + B;
+END Behavior;

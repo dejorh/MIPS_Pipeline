@@ -1,0 +1,17 @@
+LIBRARY ieee;								--Provide compiler with access to Library
+USE ieee.std_logic_1164.all;			--Use all contents from package in ieee Library
+
+ENTITY IFetch_Stage IS						--Top-Level Entity Declaration%
+	PORT (Clock, Reset : IN STD_LOGIC;	--Input declaration
+		----- This address corresponds to Instruction-Memory -----
+			Curr_Address: OUT STD_LOGIC_VECTOR(31 DOWNTO 0); --Output Vectors
+		----- This is the 32-bit bus corresponding to the Instruction -----
+			Instruction	: OUT STD_LOGIC_VECTOR(31 DOWNTO 0)); --Output Vectors
+END IFetch_Stage; 
+
+ARCHITECTURE Behavior OF T_flipflop IS		--Behavioral Entity Description
+   	----- This will serve as the input to the PC register -----
+	SIGNAL PC_plus4 : STD_LOGIC_VECTOR(31 DOWNTO 0); --Interim vector signal 
+BEGIN
+	
+	PC: PC_Reg PORT MAP(Clock,Reset,PC_plus4);

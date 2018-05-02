@@ -1,0 +1,20 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE work.mux4to1_package.all;
+USE work.mux2to1_package.all;
+
+ENTITY mux_8to1 IS
+GENERIC (N : INTEGER := 32);
+	PORT (S0,S1,S2		: IN STD_LOGIC;
+			X0,X1,X2,X3	: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+			X4,X5,X6,X7	: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+			Y				: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0));
+END mux_8to1;
+
+ARCHITECTURE Structure OF mux_8to1 IS
+	SIGNAL W0,W1	: STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+BEGIN
+	MUX0_4_1	:	mux_4to1	PORT MAP((S1&S0),X0,X1,X2,X3,W0);
+	MUX1_4_1	:	mux_4to1 PORT MAP((S1&S0),X4,X5,X6,X7,W1);
+	MUX2_2_1	:	mux_2to1 GENERIC MAP(N) PORT MAP(S2,W0,W1,Y);
+END Structure;

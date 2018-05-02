@@ -1,0 +1,278 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 0 0 80 560)
+	(text "mux32" (rect 22 0 69 15)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 546 25 556)(font "Arial" ))
+	(port
+		(pt 0 40)
+		(input)
+		(text "data31" (rect 0 0 41 12)(font "Arial" (font_size 8)))
+		(text "data31" (rect 4 28 38 39)(font "Arial" (font_size 8)))
+		(line (pt 0 40)(pt 32 40))
+	)
+	(port
+		(pt 0 56)
+		(input)
+		(text "data30" (rect 0 0 41 12)(font "Arial" (font_size 8)))
+		(text "data30" (rect 4 44 38 55)(font "Arial" (font_size 8)))
+		(line (pt 0 56)(pt 32 56))
+	)
+	(port
+		(pt 0 72)
+		(input)
+		(text "data29" (rect 0 0 41 12)(font "Arial" (font_size 8)))
+		(text "data29" (rect 4 60 38 71)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 32 72))
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "data28" (rect 0 0 41 12)(font "Arial" (font_size 8)))
+		(text "data28" (rect 4 76 38 87)(font "Arial" (font_size 8)))
+		(line (pt 0 88)(pt 32 88))
+	)
+	(port
+		(pt 0 104)
+		(input)
+		(text "data27" (rect 0 0 41 12)(font "Arial" (font_size 8)))
+		(text "data27" (rect 4 92 38 103)(font "Arial" (font_size 8)))
+		(line (pt 0 104)(pt 32 104))
+	)
+	(port
+		(pt 0 120)
+		(input)
+		(text "data26" (rect 0 0 41 12)(font "Arial" (font_size 8)))
+		(text "data26" (rect 4 108 38 119)(font "Arial" (font_size 8)))
+		(line (pt 0 120)(pt 32 120))
+	)
+	(port
+		(pt 0 136)
+		(input)
+		(text "data25" (rect 0 0 41 12)(font "Arial" (font_size 8)))
+		(text "data25" (rect 4 124 38 135)(font "Arial" (font_size 8)))
+		(line (pt 0 136)(pt 32 136))
+	)
+	(port
+		(pt 0 152)
+		(input)
+		(text "data24" (rect 0 0 41 12)(font "Arial" (font_size 8)))
+		(text "data24" (rect 4 140 38 151)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 32 152))
+	)
+	(port
+		(pt 0 168)
+		(input)
+		(text "data23" (rect 0 0 41 12)(font "Arial" (font_size 8)))
+		(text "data23" (rect 4 156 38 167)(font "Arial" (font_size 8)))
+		(line (pt 0 168)(pt 32 168))
+	)
+	(port
+		(pt 0 184)
+		(input)
+		(text "data22" (rect 0 0 41 12)(font "Arial" (font_size 8)))
+		(text "data22" (rect 4 172 38 183)(font "Arial" (font_size 8)))
+		(line (pt 0 184)(pt 32 184))
+	)
+	(port
+		(pt 0 200)
+		(input)
+		(text "data21" (rect 0 0 41 12)(font "Arial" (font_size 8)))
+		(text "data21" (rect 4 188 38 199)(font "Arial" (font_size 8)))
+		(line (pt 0 200)(pt 32 200))
+	)
+	(port
+		(pt 0 216)
+		(input)
+		(text "data20" (rect 0 0 41 12)(font "Arial" (font_size 8)))
+		(text "data20" (rect 4 204 38 215)(font "Arial" (font_size 8)))
+		(line (pt 0 216)(pt 32 216))
+	)
+	(port
+		(pt 0 232)
+		(input)
+		(text "data19" (rect 0 0 41 12)(font "Arial" (font_size 8)))
+		(text "data19" (rect 4 220 38 231)(font "Arial" (font_size 8)))
+		(line (pt 0 232)(pt 32 232))
+	)
+	(port
+		(pt 0 248)
+		(input)
+		(text "data18" (rect 0 0 41 12)(font "Arial" (font_size 8)))
+		(text "data18" (rect 4 236 38 247)(font "Arial" (font_size 8)))
+		(line (pt 0 248)(pt 32 248))
+	)
+	(port
+		(pt 0 264)
+		(input)
+		(text "data17" (rect 0 0 41 12)(font "Arial" (font_size 8)))
+		(text "data17" (rect 4 252 38 263)(font "Arial" (font_size 8)))
+		(line (pt 0 264)(pt 32 264))
+	)
+	(port
+		(pt 0 280)
+		(input)
+		(text "data16" (rect 0 0 41 12)(font "Arial" (font_size 8)))
+		(text "data16" (rect 4 268 38 279)(font "Arial" (font_size 8)))
+		(line (pt 0 280)(pt 32 280))
+	)
+	(port
+		(pt 0 296)
+		(input)
+		(text "data15" (rect 0 0 41 12)(font "Arial" (font_size 8)))
+		(text "data15" (rect 4 284 38 295)(font "Arial" (font_size 8)))
+		(line (pt 0 296)(pt 32 296))
+	)
+	(port
+		(pt 0 312)
+		(input)
+		(text "data14" (rect 0 0 41 12)(font "Arial" (font_size 8)))
+		(text "data14" (rect 4 300 38 311)(font "Arial" (font_size 8)))
+		(line (pt 0 312)(pt 32 312))
+	)
+	(port
+		(pt 0 328)
+		(input)
+		(text "data13" (rect 0 0 41 12)(font "Arial" (font_size 8)))
+		(text "data13" (rect 4 316 38 327)(font "Arial" (font_size 8)))
+		(line (pt 0 328)(pt 32 328))
+	)
+	(port
+		(pt 0 344)
+		(input)
+		(text "data12" (rect 0 0 41 12)(font "Arial" (font_size 8)))
+		(text "data12" (rect 4 332 38 343)(font "Arial" (font_size 8)))
+		(line (pt 0 344)(pt 32 344))
+	)
+	(port
+		(pt 0 360)
+		(input)
+		(text "data11" (rect 0 0 41 12)(font "Arial" (font_size 8)))
+		(text "data11" (rect 4 348 38 359)(font "Arial" (font_size 8)))
+		(line (pt 0 360)(pt 32 360))
+	)
+	(port
+		(pt 0 376)
+		(input)
+		(text "data10" (rect 0 0 41 12)(font "Arial" (font_size 8)))
+		(text "data10" (rect 4 364 38 375)(font "Arial" (font_size 8)))
+		(line (pt 0 376)(pt 32 376))
+	)
+	(port
+		(pt 0 392)
+		(input)
+		(text "data9" (rect 0 0 34 12)(font "Arial" (font_size 8)))
+		(text "data9" (rect 4 380 32 391)(font "Arial" (font_size 8)))
+		(line (pt 0 392)(pt 32 392))
+	)
+	(port
+		(pt 0 408)
+		(input)
+		(text "data8" (rect 0 0 34 12)(font "Arial" (font_size 8)))
+		(text "data8" (rect 4 396 32 407)(font "Arial" (font_size 8)))
+		(line (pt 0 408)(pt 32 408))
+	)
+	(port
+		(pt 0 424)
+		(input)
+		(text "data7" (rect 0 0 34 12)(font "Arial" (font_size 8)))
+		(text "data7" (rect 4 412 32 423)(font "Arial" (font_size 8)))
+		(line (pt 0 424)(pt 32 424))
+	)
+	(port
+		(pt 0 440)
+		(input)
+		(text "data6" (rect 0 0 34 12)(font "Arial" (font_size 8)))
+		(text "data6" (rect 4 428 32 439)(font "Arial" (font_size 8)))
+		(line (pt 0 440)(pt 32 440))
+	)
+	(port
+		(pt 0 456)
+		(input)
+		(text "data5" (rect 0 0 34 12)(font "Arial" (font_size 8)))
+		(text "data5" (rect 4 444 32 455)(font "Arial" (font_size 8)))
+		(line (pt 0 456)(pt 32 456))
+	)
+	(port
+		(pt 0 472)
+		(input)
+		(text "data4" (rect 0 0 34 12)(font "Arial" (font_size 8)))
+		(text "data4" (rect 4 460 32 471)(font "Arial" (font_size 8)))
+		(line (pt 0 472)(pt 32 472))
+	)
+	(port
+		(pt 0 488)
+		(input)
+		(text "data3" (rect 0 0 34 12)(font "Arial" (font_size 8)))
+		(text "data3" (rect 4 476 32 487)(font "Arial" (font_size 8)))
+		(line (pt 0 488)(pt 32 488))
+	)
+	(port
+		(pt 0 504)
+		(input)
+		(text "data2" (rect 0 0 34 12)(font "Arial" (font_size 8)))
+		(text "data2" (rect 4 492 32 503)(font "Arial" (font_size 8)))
+		(line (pt 0 504)(pt 32 504))
+	)
+	(port
+		(pt 0 520)
+		(input)
+		(text "data1" (rect 0 0 34 12)(font "Arial" (font_size 8)))
+		(text "data1" (rect 4 508 32 519)(font "Arial" (font_size 8)))
+		(line (pt 0 520)(pt 32 520))
+	)
+	(port
+		(pt 0 536)
+		(input)
+		(text "data0" (rect 0 0 34 12)(font "Arial" (font_size 8)))
+		(text "data0" (rect 4 524 32 535)(font "Arial" (font_size 8)))
+		(line (pt 0 536)(pt 32 536))
+	)
+	(port
+		(pt 40 560)
+		(input)
+		(text "sel[4..0]" (rect 0 0 12 47)(font "Arial" (font_size 8))(vertical))
+		(text "sel[4..0]" (rect 34 504 45 543)(font "Arial" (font_size 8))(vertical))
+		(line (pt 40 560)(pt 40 548)(line_width 3))
+	)
+	(port
+		(pt 80 288)
+		(output)
+		(text "result" (rect 0 0 33 12)(font "Arial" (font_size 8)))
+		(text "result" (rect 50 276 78 287)(font "Arial" (font_size 8)))
+		(line (pt 80 288)(pt 48 288))
+	)
+	(drawing
+		(line (pt 32 24)(pt 32 552))
+		(line (pt 32 24)(pt 48 32))
+		(line (pt 32 552)(pt 48 544))
+		(line (pt 48 32)(pt 48 544))
+		(line (pt 0 0)(pt 82 0))
+		(line (pt 82 0)(pt 82 562))
+		(line (pt 0 562)(pt 82 562))
+		(line (pt 0 0)(pt 0 562))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
+	)
+)

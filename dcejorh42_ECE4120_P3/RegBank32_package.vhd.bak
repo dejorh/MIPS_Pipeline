@@ -1,0 +1,18 @@
+LIBRARY ieee;						--Provide compiler with access to Librar
+USE ieee.std_logic_1164.all;	--Use all contents from package in ieee Library
+
+PACKAGE RegBank32_package IS
+	COMPONENT Reg_Bank_32						--Component Declaration
+		GENERIC(N	: INTEGER := 32);	-- Constant declaration
+		PORT (Clock,Reset						:	IN STD_LOGIC;	--Input declaration
+					--Input Vector Declarations
+				E									:	IN STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+				Data								:	IN STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+					-- Ouput Vector Declarations for the 32, 32-bit Registers
+				Q0,Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8	: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+				Q9,Q10,Q11,Q12,Q13,Q14,Q15	: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+				Q16,Q17,Q18,Q19,Q20,Q21,Q22: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+				Q23,Q24,Q25,Q26,Q27,Q28,Q29: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+				Q30,Q31							: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0));
+	END COMPONENT;
+END RegBank32_package;

@@ -1,0 +1,835 @@
+# ERROR: No extended dataflow license exists
+# do IFetch_Stage_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying /home/dennisejorh/intelFPGA_lite/17.1/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/PC_reg_package.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:15 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/PC_reg_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package PC_reg_package
+# End time: 07:35:16 on Apr 25,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/Adder32.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:16 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/Adder32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Adder32
+# -- Compiling architecture Behavior of Adder32
+# End time: 07:35:16 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/Adder32_package.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:16 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/Adder32_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling package Adder32_package
+# End time: 07:35:16 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/proctypes_package.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:16 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/proctypes_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package proctypes_package
+# End time: 07:35:16 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/decoder5_to_32.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:16 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/decoder5_to_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity decoder5_to_32
+# -- Compiling architecture Behavior of decoder5_to_32
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/decoder5_to_32.vhd(20): (vcom-1073) Non-locally static choice (association #1, choice #1) is allowed only if it is the only choice of the only association.
+# End time: 07:35:16 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/decoder5to32_package.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:16 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/decoder5to32_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package decoder5to32_package
+# End time: 07:35:17 on Apr 25,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/Reg32en.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:17 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/Reg32en.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Reg32en
+# -- Compiling architecture Behavior of Reg32en
+# End time: 07:35:17 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/Reg32en_package.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:17 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/Reg32en_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package Reg32en_package
+# End time: 07:35:17 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/mux_2to1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:17 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/mux_2to1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity mux_2to1
+# -- Compiling architecture Behavior of mux_2to1
+# End time: 07:35:17 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/mux2to1_package.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:17 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/mux2to1_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package mux2to1_package
+# End time: 07:35:17 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/mux4to1_package.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:17 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/mux4to1_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package mux4to1_package
+# End time: 07:35:17 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/mux32to1_package.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:17 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/mux32to1_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package mux32to1_package
+# End time: 07:35:17 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/SignExtend.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:17 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/SignExtend.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SignExtend
+# -- Compiling architecture Behavior of SignExtend
+# End time: 07:35:17 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/SignExtend_package.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:17 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/SignExtend_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package SignExtend_package
+# End time: 07:35:17 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/alu_1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:17 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/alu_1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity alu_1
+# -- Compiling architecture Behavior of alu_1
+# End time: 07:35:18 on Apr 25,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/ALU_package.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:18 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/ALU_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package ALU_package
+# End time: 07:35:18 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/Control.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:18 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/Control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Control
+# -- Compiling architecture Behavior of Control
+# End time: 07:35:18 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/ALU_Control.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:18 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/ALU_Control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ALU_Control
+# -- Compiling architecture Behavior of ALU_Control
+# End time: 07:35:18 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/ALUcontrol_package.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:18 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/ALUcontrol_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package ALUcontrol_package
+# End time: 07:35:18 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/Control_package.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:18 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/Control_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package Control_package
+# End time: 07:35:18 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/ShiftLeft_2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:18 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/ShiftLeft_2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity ShiftLeft_2
+# -- Compiling architecture Behavior of ShiftLeft_2
+# End time: 07:35:18 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/ShiftLeft2_package.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:18 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/ShiftLeft2_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package ShiftLeft2_package
+# End time: 07:35:18 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/IF_ID_package.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:18 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/IF_ID_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package IF_ID_package
+# End time: 07:35:19 on Apr 25,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/ID_EX_REG.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:19 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/ID_EX_REG.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity ID_EX_REG
+# -- Compiling architecture Behavior of ID_EX_REG
+# End time: 07:35:19 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/ID_EX_package.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:19 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/ID_EX_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package ID_EX_package
+# End time: 07:35:19 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/EX_MEM_REG.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:19 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/EX_MEM_REG.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity EX_MEM_REG
+# -- Compiling architecture Behavior of EX_MEM_REG
+# End time: 07:35:19 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/EX_MEM_package.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:19 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/EX_MEM_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package EX_MEM_package
+# End time: 07:35:19 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/MEM_WB_REG.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:19 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/MEM_WB_REG.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity MEM_WB_REG
+# -- Compiling architecture Behavior of MEM_WB_REG
+# End time: 07:35:19 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/MEM_WB_package.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:19 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/MEM_WB_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package MEM_WB_package
+# End time: 07:35:19 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/FWD_Unit.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:19 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/FWD_Unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity FWD_Unit
+# -- Compiling architecture Behavior of FWD_Unit
+# End time: 07:35:20 on Apr 25,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/FWD_Unit_package.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:20 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/FWD_Unit_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package FWD_Unit_package
+# End time: 07:35:20 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/Hazard_Detect.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:20 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/Hazard_Detect.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Hazard_Detect
+# -- Compiling architecture Behavior of Hazard_Detect
+# End time: 07:35:20 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/HDU_1_package.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:20 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/HDU_1_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package HDU_1_package
+# End time: 07:35:20 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/Hazard_Detect_2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:20 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/Hazard_Detect_2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Hazard_Detect_2
+# -- Compiling architecture Behavior of Hazard_Detect_2
+# End time: 07:35:20 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/HDU_2_package.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:20 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/HDU_2_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package HDU_2_package
+# End time: 07:35:20 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/I_Mem.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:20 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/I_Mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Compiling entity I_Mem
+# -- Compiling architecture SYN of i_mem
+# End time: 07:35:20 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/I_Mem_package.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:20 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/I_Mem_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package I_Mem_package
+# End time: 07:35:20 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/D_Mem.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:20 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/D_Mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Compiling entity D_Mem
+# -- Compiling architecture SYN of d_mem
+# End time: 07:35:20 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/D_Mem_package.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:20 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/D_Mem_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package D_Mem_package
+# End time: 07:35:21 on Apr 25,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/mux32.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:21 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/mux32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package MATH_REAL
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package proctypes_package
+# -- Compiling entity mux32
+# -- Compiling architecture Behavior of mux32
+# End time: 07:35:21 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/mux32_package.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:21 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/mux32_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package MATH_REAL
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package proctypes_package
+# -- Compiling package mux32_package
+# End time: 07:35:21 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/Reg_Bank_32.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:21 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/Reg_Bank_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package Reg32en_package
+# -- Loading package proctypes_package
+# -- Compiling entity Reg_Bank_32
+# -- Compiling architecture Structure of Reg_Bank_32
+# End time: 07:35:21 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/RegBank32_package.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:21 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/RegBank32_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package proctypes_package
+# -- Compiling package RegBank32_package
+# End time: 07:35:21 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/mux_4to1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:21 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/mux_4to1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package mux2to1_package
+# -- Compiling entity mux_4to1
+# -- Compiling architecture Structure of mux_4to1
+# End time: 07:35:21 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/WriteUnit_package.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:21 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/WriteUnit_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package proctypes_package
+# -- Compiling package WriteUnit_package
+# End time: 07:35:21 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/ReadUnit_package.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:21 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/ReadUnit_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package proctypes_package
+# -- Compiling package ReadUnit_package
+# End time: 07:35:21 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/RegisterFile_package.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:21 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/RegisterFile_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package proctypes_package
+# -- Compiling package RegisterFile_package
+# End time: 07:35:21 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/IF_ID_REG.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:21 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/IF_ID_REG.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package Reg32en_package
+# -- Compiling entity IF_ID_REG
+# -- Compiling architecture Behavior of IF_ID_REG
+# End time: 07:35:21 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/WriteUnit.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:21 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/WriteUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package decoder5to32_package
+# -- Loading package proctypes_package
+# -- Loading package RegBank32_package
+# -- Compiling entity WriteUnit
+# -- Compiling architecture Structure of WriteUnit
+# End time: 07:35:22 on Apr 25,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/ReadUnit.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:22 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/ReadUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package mux32to1_package
+# -- Loading package proctypes_package
+# -- Loading package std_logic_arith
+# -- Loading package MATH_REAL
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package mux32_package
+# -- Compiling entity ReadUnit
+# -- Compiling architecture Structure of ReadUnit
+# End time: 07:35:22 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/RegisterFile.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:22 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/RegisterFile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package proctypes_package
+# -- Loading package WriteUnit_package
+# -- Loading package ReadUnit_package
+# -- Compiling entity RegisterFile
+# -- Compiling architecture Structure of RegisterFile
+# End time: 07:35:22 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:22 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package PC_reg_package
+# -- Loading package I_Mem_package
+# -- Loading package proctypes_package
+# -- Loading package RegisterFile_package
+# -- Loading package SignExtend_package
+# -- Loading package ALU_package
+# -- Loading package mux2to1_package
+# -- Loading package MATH_REAL
+# -- Loading package mux32_package
+# -- Loading package Adder32_package
+# -- Loading package D_Mem_package
+# -- Loading package ShiftLeft2_package
+# -- Loading package Control_package
+# -- Loading package ALUcontrol_package
+# -- Loading package IF_ID_package
+# -- Loading package ID_EX_package
+# -- Loading package EX_MEM_package
+# -- Loading package MEM_WB_package
+# -- Loading package FWD_Unit_package
+# -- Loading package HDU_1_package
+# -- Loading package HDU_2_package
+# -- Loading package mux4to1_package
+# -- Loading package Reg32en_package
+# -- Compiling entity MIPS_Pipeline
+# -- Compiling architecture Structure of MIPS_Pipeline
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd(125): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd(141): Cannot associate port "Q" of mode OUT with port "PC" of mode BUFFER.
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd(146): Cannot associate port "q" of mode OUT with port "Instruction" of mode BUFFER.
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd(148): Cannot associate port "Result" of mode OUT with port "nextPC" of mode BUFFER.
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd(165): Cannot associate port "PC_Write" of mode OUT with port "PC_Write" of mode BUFFER.
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd(165): Cannot associate port "IF_ID_Write" of mode OUT with port "IF_ID_Write" of mode BUFFER.
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd(165): Cannot associate port "Flush" of mode OUT with port "Flush" of mode BUFFER.
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd(169): Cannot associate port "read_data_1" of mode OUT with port "read_data_1" of mode BUFFER.
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd(169): Cannot associate port "read_data_2" of mode OUT with port "read_data_2" of mode BUFFER.
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd(180): Cannot associate port "ID_EX_Rs" of mode OUT with port "ID_EX_Rs" of mode BUFFER.
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd(180): Cannot associate port "ID_EX_Rt" of mode OUT with port "ID_EX_Rt" of mode BUFFER.
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd(180): Cannot associate port "ID_EX_Rd" of mode OUT with port "ID_EX_Rd" of mode BUFFER.
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd(184): Cannot associate port "EX_MEM_Flush" of mode OUT with port "EX_MEM_Flush" of mode BUFFER.
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd(187): Cannot associate port "Y" of mode OUT with port "write_register" of mode BUFFER.
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd(194): Cannot associate port "Y" of mode OUT with port "FWD_Data_A" of mode BUFFER.
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd(198): Cannot associate port "Y" of mode OUT with port "FWD_Data_B" of mode BUFFER.
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd(202): Cannot associate port "FWD_A" of mode OUT with port "FWD_A" of mode BUFFER.
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd(202): Cannot associate port "FWD_B" of mode OUT with port "FWD_B" of mode BUFFER.
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd(204): Cannot associate port "Zero" of mode OUT with port "Zero" of mode BUFFER.
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd(215): Cannot associate port "Y" of mode OUT with port "PC_i" of mode BUFFER.
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd(230): Cannot associate port "EX_MEM_ALU_result" of mode OUT with port "EX_MEM_ALU_result" of mode BUFFER.
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd(230): Cannot associate port "EX_MEM_write_register" of mode OUT with port "EX_MEM_write_register" of mode BUFFER.
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd(230): Cannot associate port "EX_MEM_MemRead" of mode OUT with port "EX_MEM_MemRead" of mode BUFFER.
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd(230): Cannot associate port "EX_MEM_MemWrite" of mode OUT with port "EX_MEM_MemWrite" of mode BUFFER.
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd(230): Cannot associate port "EX_MEM_MemtoReg" of mode OUT with port "EX_MEM_MemtoReg" of mode BUFFER.
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd(230): Cannot associate port "EX_MEM_RegWrite" of mode OUT with port "EX_MEM_RegWrite" of mode BUFFER.
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd(230): Cannot associate port "EX_MEM_Branch_eq" of mode OUT with port "EX_MEM_Branch_eq" of mode BUFFER.
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd(230): Cannot associate port "EX_MEM_Branch_ne" of mode OUT with port "EX_MEM_Branch_ne" of mode BUFFER.
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd(230): Cannot associate port "EX_MEM_Zero" of mode OUT with port "EX_MEM_Zero" of mode BUFFER.
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd(253): Cannot associate port "MEM_WB_read_data" of mode OUT with port "MEM_WB_read_data" of mode BUFFER.
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd(253): Cannot associate port "MEM_WB_ALU_result" of mode OUT with port "MEM_WB_ALU_result" of mode BUFFER.
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd(253): Cannot associate port "MEM_WB_write_register" of mode OUT with port "MEM_WB_write_register" of mode BUFFER.
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd(253): Cannot associate port "MEM_WB_MemtoReg" of mode OUT with port "MEM_WB_MemtoReg" of mode BUFFER.
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd(253): Cannot associate port "MEM_WB_RegWrite" of mode OUT with port "MEM_WB_RegWrite" of mode BUFFER.
+# ** Warning: /home/dennisejorh/Documents/Project_pt1/MIPS_Pipeline.vhd(259): Cannot associate port "Y" of mode OUT with port "MEM_WB_write_data" of mode BUFFER.
+# End time: 07:35:22 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 35
+# 
+# vcom -93 -work work {/home/dennisejorh/Documents/Project_pt1/TB_MIPS_Pipe.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:35:22 on Apr 25,2018
+# vcom -reportprogress 300 -93 -work work /home/dennisejorh/Documents/Project_pt1/TB_MIPS_Pipe.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity TB_MIPS_Pipe
+# -- Compiling architecture TB_MIPS_Pipe_Arch of TB_MIPS_Pipe
+# End time: 07:35:22 on Apr 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  TB_MIPS_Pipe
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" TB_MIPS_Pipe 
+# Start time: 07:35:22 on Apr 25,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.tb_mips_pipe(tb_mips_pipe_arch)
+# Loading work.pc_reg_package
+# Loading work.i_mem_package
+# Loading work.proctypes_package
+# Loading work.registerfile_package
+# Loading work.signextend_package
+# Loading work.alu_package
+# Loading work.mux2to1_package
+# Loading ieee.math_real(body)
+# Loading work.mux32_package
+# Loading work.adder32_package
+# Loading work.d_mem_package
+# Loading work.shiftleft2_package
+# Loading work.control_package
+# Loading work.alucontrol_package
+# Loading work.if_id_package
+# Loading work.id_ex_package
+# Loading work.ex_mem_package
+# Loading work.mem_wb_package
+# Loading work.fwd_unit_package
+# Loading work.hdu_1_package
+# Loading work.hdu_2_package
+# Loading work.mux4to1_package
+# Loading work.reg32en_package
+# Loading work.mips_pipeline(structure)
+# Loading work.reg32en(behavior)
+# Loading altera_mf.altera_mf_components
+# Loading work.i_mem(syn)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)
+# Loading work.adder32(behavior)
+# Loading work.if_id_reg(behavior)
+# Loading work.shiftleft_2(behavior)
+# Loading work.control(behavior)
+# Loading work.hazard_detect(behavior)
+# Loading work.writeunit_package
+# Loading work.readunit_package
+# Loading work.registerfile(structure)
+# Loading work.mux32to1_package
+# Loading work.readunit(structure)
+# Loading work.mux32(behavior)
+# Loading work.decoder5to32_package
+# Loading work.regbank32_package
+# Loading work.writeunit(structure)
+# Loading work.decoder5_to_32(behavior)
+# Loading work.reg_bank_32(structure)
+# Loading work.signextend(behavior)
+# Loading work.id_ex_reg(behavior)
+# Loading work.hazard_detect_2(behavior)
+# Loading work.mux_2to1(behavior)
+# Loading work.mux_4to1(structure)
+# Loading work.fwd_unit(behavior)
+# Loading work.alu_1(behavior)
+# Loading work.alu_control(behavior)
+# Loading work.ex_mem_reg(behavior)
+# Loading work.d_mem(syn)
+# Loading work.mem_wb_reg(behavior)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_mips_pipe/MIPS/ID_EX/ID_EX_Jump_Addr(31 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_mips_pipe/MIPS/EX_MEM_nextPC(31 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU) to the signal network.
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 3 us
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips_pipe/MIPS/Add1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips_pipe/MIPS/Add1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips_pipe/MIPS/RegF0/WRITE_U_0/DECODE0_5_32
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips_pipe/MIPS/RegF0/WRITE_U_0/DECODE0_5_32
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips_pipe/MIPS/RegF0/READ_U_0/MUX1_32_1
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips_pipe/MIPS/RegF0/READ_U_0/MUX1_32_1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips_pipe/MIPS/RegF0/READ_U_0/MUX0_32_1
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips_pipe/MIPS/RegF0/READ_U_0/MUX0_32_1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips_pipe/MIPS/Add0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips_pipe/MIPS/Add0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_mips_pipe/MIPS/Add1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_mips_pipe/MIPS/Add1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_mips_pipe/MIPS/RegF0/READ_U_0/MUX0_32_1
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /tb_mips_pipe/MIPS/RegF0/READ_U_0/MUX0_32_1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_mips_pipe/MIPS/RegF0/READ_U_0/MUX1_32_1
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /tb_mips_pipe/MIPS/RegF0/READ_U_0/MUX1_32_1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_mips_pipe/MIPS/RegF0/WRITE_U_0/DECODE0_5_32
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /tb_mips_pipe/MIPS/RegF0/WRITE_U_0/DECODE0_5_32
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_mips_pipe/MIPS/Add0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /tb_mips_pipe/MIPS/ALU_exc
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /tb_mips_pipe/MIPS/ALU_exc
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 100 ns  Iteration: 3  Instance: /tb_mips_pipe/MIPS/Add1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 100 ns  Iteration: 3  Instance: /tb_mips_pipe/MIPS/Add1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 100 ns  Iteration: 4  Instance: /tb_mips_pipe/MIPS/ALU_exc
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 200 ns  Iteration: 2  Instance: /tb_mips_pipe/MIPS/Add1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 200 ns  Iteration: 2  Instance: /tb_mips_pipe/MIPS/Add1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 200 ns  Iteration: 3  Instance: /tb_mips_pipe/MIPS/Add1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 400 ns  Iteration: 4  Instance: /tb_mips_pipe/MIPS/ALU_exc
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 700 ns  Iteration: 4  Instance: /tb_mips_pipe/MIPS/ALU_exc
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 800 ns  Iteration: 5  Instance: /tb_mips_pipe/MIPS/ALU_exc
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 900 ns  Iteration: 6  Instance: /tb_mips_pipe/MIPS/ALU_exc
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1500 ns  Iteration: 4  Instance: /tb_mips_pipe/MIPS/ALU_exc

@@ -1,0 +1,18 @@
+LIBRARY ieee;						--Provide compiler with access to Library
+USE ieee.std_logic_1164.all;	--Use all contents from package in ieee Library
+USE ieee.std_logic_arith.all;	--Use all contents from package in ieee Library
+USE ieee.std_logic_unsigned.all;	--Use all contents from package in ieee Library
+USE ieee.math_real.all;
+USE work.proctypes_package.all;
+
+ENTITY mux32 IS
+	GENERIC(PORTS	: INTEGER := 32);
+	PORT (Sel	:	IN STD_LOGIC_VECTOR(CEIL((LOG2(PORTS))) - 1 DOWNTO 0);
+			X		:	IN	T_SLVV_32;
+			Y		:	OUT STD_LOGIC_VECTOR(PORTS - 1 DOWNTO 0));
+END mux32;
+
+ARCHITECTURE Structure OF mux32 IS
+BEGIN
+	Y <= X(CONV_UNSIGNED(Sel));
+END Structure;

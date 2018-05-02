@@ -1,0 +1,17 @@
+LIBRARY ieee;							--Provide compiler with access to Library
+USE ieee.std_logic_1164.all;		--Use all contents from package in ieee Library
+
+ENTITY SignExtend IS
+GENERIC(N : INTEGER := 16);	
+	PORT (Immediate_value	:	IN STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+			Extend_value		: OUT STD_LOGIC_VECTOR((2*N)-1 DOWNTO 0));
+END SignExtend;
+
+ARCHITECTURE Behavior OF SignExtend IS
+	SIGNAL Zeros,Ones	: STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+BEGIN
+	Zeros <= (OTHERS => '0');
+	Ones	<= (OTHERS => '1');
+	Extend_value <= Zeros&Immediate_value WHEN Immediate_value(N-1)='0',
+						 Ones&Immediate_value WHEN OTHERS;
+END Behavior;

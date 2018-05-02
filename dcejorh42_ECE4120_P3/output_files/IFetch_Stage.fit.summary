@@ -1,0 +1,18 @@
+Fitter Status : Successful - Wed Apr 25 07:23:43 2018
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : IFetch_Stage
+Top-level Entity Name : MIPS_Pipeline
+Family : MAX 10
+Device : 10M50DAF672C7G
+Timing Models : Final
+Total logic elements : 2,164 / 49,760 ( 4 % )
+    Total combinational functions : 2,075 / 49,760 ( 4 % )
+    Dedicated logic registers : 1,394 / 49,760 ( 3 % )
+Total registers : 1394
+Total pins : 490 / 500 ( 98 % )
+Total virtual pins : 0
+Total memory bits : 16,384 / 1,677,312 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 2 ( 0 % )

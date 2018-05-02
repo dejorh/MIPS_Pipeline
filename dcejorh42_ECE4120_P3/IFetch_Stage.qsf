@@ -1,0 +1,171 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2017  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+# Date created = 12:57:31  February 28, 2018
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		IFetch_Stage_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX 10"
+set_global_assignment -name DEVICE 10M50DAF672C7G
+set_global_assignment -name TOP_LEVEL_ENTITY MIPS_Pipeline
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:57:30  FEBRUARY 28, 2018"
+set_global_assignment -name LAST_QUARTUS_VERSION "17.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name ENABLE_OCT_DONE OFF
+set_global_assignment -name EXTERNAL_FLASH_FALLBACK_ADDRESS 00000000
+set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "PASSIVE SERIAL"
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name INTERNAL_FLASH_UPDATE_MODE "SINGLE IMAGE WITH ERAM"
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH TB_MIPS_Pipe -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME TB_IFetch -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME IFetch_Stage -section_id TB_IFetch
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME TB_IFetch -section_id TB_IFetch
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "5 us" -section_id TB_IFetch
+set_global_assignment -name EDA_TEST_BENCH_NAME TB_IF_ID_EX -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id TB_IF_ID_EX
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "2 us" -section_id TB_IF_ID_EX
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME TB_IF_ID_EX -section_id TB_IF_ID_EX
+set_global_assignment -name EDA_TEST_BENCH_NAME TB_MIPS -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id TB_MIPS
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "2 us" -section_id TB_MIPS
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME TB_MIPS -section_id TB_MIPS
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name EDA_TEST_BENCH_FILE TB_IFetch.vhd -section_id TB_IFetch
+set_global_assignment -name EDA_TEST_BENCH_FILE TB_IF_ID_EX.vhd -section_id TB_IF_ID_EX
+set_global_assignment -name EDA_TEST_BENCH_FILE TB_MIPS.vhd -section_id TB_MIPS
+set_global_assignment -name EDA_TEST_BENCH_NAME TB_MIPS_Pipe -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id TB_MIPS_Pipe
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "3 us" -section_id TB_MIPS_Pipe
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME TB_MIPS_Pipe -section_id TB_MIPS_Pipe
+set_global_assignment -name EDA_TEST_BENCH_FILE TB_MIPS_Pipe.vhd -section_id TB_MIPS_Pipe
+set_global_assignment -name VHDL_FILE TB_MIPS_Pipe.vhd
+set_global_assignment -name QIP_FILE Program_Mem.qip
+set_global_assignment -name VHDL_FILE IFetch_Stage.vhd
+set_global_assignment -name VHDL_FILE PC_Reg.vhd
+set_global_assignment -name VHDL_FILE ProgMem_package.vhd
+set_global_assignment -name VHDL_FILE PC_reg_package.vhd
+set_global_assignment -name VHDL_FILE Adder32.vhd
+set_global_assignment -name VHDL_FILE Adder32_package.vhd
+set_global_assignment -name MIF_FILE Program1.mif
+set_global_assignment -name VECTOR_WAVEFORM_FILE Fetch_test1.vwf
+set_global_assignment -name VHDL_FILE TB_IFetch.vhd
+set_global_assignment -name VHDL_FILE IFetch_package.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name VHDL_FILE RegFile.vhd
+set_global_assignment -name VHDL_FILE proctypes_package.vhd
+set_global_assignment -name VHDL_FILE mux32.vhd
+set_global_assignment -name VHDL_FILE mux32_package.vhd
+set_global_assignment -name VHDL_FILE decoder5_to_32.vhd
+set_global_assignment -name VHDL_FILE decoder5to32_package.vhd
+set_global_assignment -name VHDL_FILE Reg32en.vhd
+set_global_assignment -name VHDL_FILE Reg32en_package.vhd
+set_global_assignment -name VHDL_FILE Reg_Bank_32.vhd
+set_global_assignment -name VHDL_FILE RegBank32_package.vhd
+set_global_assignment -name VHDL_FILE mux_2to1.vhd
+set_global_assignment -name VHDL_FILE mux_4to1.vhd
+set_global_assignment -name VHDL_FILE mux2to1_package.vhd
+set_global_assignment -name VHDL_FILE mux4to1_package.vhd
+set_global_assignment -name VHDL_FILE mux_8to1.vhd
+set_global_assignment -name VHDL_FILE mux8to1_package.vhd
+set_global_assignment -name VHDL_FILE mux_16to1.vhd
+set_global_assignment -name VHDL_FILE mux16to1_package.vhd
+set_global_assignment -name VHDL_FILE mux_32to1.vhd
+set_global_assignment -name VHDL_FILE mux32to1_package.vhd
+set_global_assignment -name VHDL_FILE WriteUnit.vhd
+set_global_assignment -name VHDL_FILE WriteUnit_package.vhd
+set_global_assignment -name VHDL_FILE ReadUnit.vhd
+set_global_assignment -name VHDL_FILE ReadUnit_package.vhd
+set_global_assignment -name VHDL_FILE RegisterFile.vhd
+set_global_assignment -name VHDL_FILE RegisterFile_package.vhd
+set_global_assignment -name VHDL_FILE SignExtend.vhd
+set_global_assignment -name VHDL_FILE SignExtend_package.vhd
+set_global_assignment -name VHDL_FILE IDecode_Stage.vhd
+set_global_assignment -name VHDL_FILE IDecode_package.vhd
+set_global_assignment -name VHDL_FILE alu_1.vhd
+set_global_assignment -name VHDL_FILE ALU_package.vhd
+set_global_assignment -name VHDL_FILE IExecute_Stage.vhd
+set_global_assignment -name VHDL_FILE IExecute_package.vhd
+set_global_assignment -name VHDL_FILE TB_IF_ID_EX.vhd
+set_global_assignment -name VHDL_FILE IF_ID_EX.vhd
+set_global_assignment -name QIP_FILE Data_Mem.qip
+set_global_assignment -name MIF_FILE Data1.mif
+set_global_assignment -name VHDL_FILE DataMem_package.vhd
+set_global_assignment -name VHDL_FILE Control.vhd
+set_global_assignment -name VHDL_FILE ALU_Control.vhd
+set_global_assignment -name VHDL_FILE ALUcontrol_package.vhd
+set_global_assignment -name VHDL_FILE Control_package.vhd
+set_global_assignment -name VHDL_FILE ShiftLeft_2.vhd
+set_global_assignment -name VHDL_FILE ShiftLeft2_package.vhd
+set_global_assignment -name VHDL_FILE MIPS_Full.vhd
+set_global_assignment -name VHDL_FILE TB_MIPS.vhd
+set_global_assignment -name VHDL_FILE MIPS_package.vhd
+set_global_assignment -name VHDL_FILE IF_ID_REG.vhd
+set_global_assignment -name VHDL_FILE IF_ID_package.vhd
+set_global_assignment -name VHDL_FILE ID_EX_REG.vhd
+set_global_assignment -name VHDL_FILE ID_EX_package.vhd
+set_global_assignment -name VHDL_FILE EX_MEM_REG.vhd
+set_global_assignment -name VHDL_FILE EX_MEM_package.vhd
+set_global_assignment -name VHDL_FILE MEM_WB_REG.vhd
+set_global_assignment -name VHDL_FILE MEM_WB_package.vhd
+set_global_assignment -name VHDL_FILE FWD_Unit.vhd
+set_global_assignment -name VHDL_FILE FWD_Unit_package.vhd
+set_global_assignment -name VHDL_FILE Hazard_Detect.vhd
+set_global_assignment -name VHDL_FILE HDU_1_package.vhd
+set_global_assignment -name VHDL_FILE Hazard_Detect_2.vhd
+set_global_assignment -name VHDL_FILE HDU_2_package.vhd
+set_global_assignment -name QIP_FILE I_Mem.qip
+set_global_assignment -name VHDL_FILE I_Mem_package.vhd
+set_global_assignment -name QIP_FILE D_Mem.qip
+set_global_assignment -name VHDL_FILE D_Mem_package.vhd
+set_global_assignment -name VHDL_FILE MIPS_Pipeline.vhd
+set_global_assignment -name MIF_FILE IMem1.mif
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

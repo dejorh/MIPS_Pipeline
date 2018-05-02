@@ -1,0 +1,14 @@
+LIBRARY ieee;						--Provide compiler with access to Library
+USE ieee.std_logic_1164.all;	--Use all contents from package in ieee Library
+
+PACKAGE IF_ID_package IS
+	COMPONENT IF_ID_REG					--Component Declaration
+	GENERIC(N : INTEGER := 32);
+		PORT (En,Clock,Reset		 :  IN STD_LOGIC;--Enable, Clock, and Reset
+				--inputs to the pipeline register
+				nextPC,Instruction :  IN STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+				--outputs to the pipeline register
+				IF_ID_nextPC		 : OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0);	
+				IF_ID_Instruction	 : OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0));
+	END COMPONENT;
+END IF_ID_package;

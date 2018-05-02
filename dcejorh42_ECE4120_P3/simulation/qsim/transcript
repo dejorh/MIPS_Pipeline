@@ -1,0 +1,11 @@
+# do ECE4120_Project_pt1.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:37:43 on Mar 01,2018
+# vcom -work work IFetch_Stage.vho 
+# ** Error (suppressible): (vcom-19) Failed to access library './rtl_work' at "./rtl_work".
+# No such file or directory. (errno = ENOENT)
+# End time: 11:37:43 on Mar 01,2018, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /home/dennisejorh/intelFPGA_lite/17.1/modelsim_ase/linuxaloem/vcom failed.
+# Executing ONERROR command at macro ./ECE4120_Project_pt1.do line 3

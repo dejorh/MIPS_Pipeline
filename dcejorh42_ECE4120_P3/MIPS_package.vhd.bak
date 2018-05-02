@@ -1,0 +1,21 @@
+LIBRARY ieee;						--Provide compiler with access to Library
+USE ieee.std_logic_1164.all;	--Use all contents from package in ieee Library
+
+PACKAGE ALUcontrol_package IS
+	COMPONENT ALU_Control					--Component Declaration
+	GENERIC(N : INTEGER := 32);
+		PORT (Clock,Reset	:  IN STD_LOGIC;
+						-- ALU Output Vector
+				ALU_result	: BUFFER STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+						-- Data to be read from read registers
+				read_data_1,read_data_2	: BUFFER STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+				write_data	: BUFFER STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+				Instruction	: BUFFER STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+				PC				: BUFFER STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+				Branch,Jump : BUFFER STD_LOGIC;
+				MemRead,MemWrite : BUFFER STD_LOGIC;
+				RegWrite		: BUFFER STD_LOGIC;
+						-- Zero signal, also an ouput
+				Zero			: BUFFER STD_LOGIC);
+	END COMPONENT;
+END ALUcontrol_package;

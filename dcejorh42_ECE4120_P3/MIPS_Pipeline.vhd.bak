@@ -1,0 +1,30 @@
+LIBRARY ieee;							 --Provide compiler with access to Library
+USE ieee.std_logic_1164.all;		 --Use all contents from package in ieee Library
+USE ieee.std_logic_arith.all;		 --Use all contents from package in ieee Library
+USE ieee.std_logic_unsigned.all;	 --Use all contents from package in ieee Library
+USE work.PC_reg_package.all;
+USE work.I_Mem_package.all;
+USE work.RegisterFile_package.all;	
+USE work.SignExtend_package.all;
+USE work.ALU_package.all;
+USE work.mux2to1_package.all;
+USE work.mux32_package.all;
+USE work.proctypes_package.all;
+USE work.Adder32_package.all;
+USE work.D_Mem_package.all;
+USE work.ShiftLeft2_package.all;
+USE work.Control_package.all;
+USE work.ALUcontrol_package.all;
+USE work.IF_ID_package.all;
+USE work.ID_EX_package.all;
+USE work.EX_MEM_package.all;
+USE work.MEM_WB_package.all;
+USE work.FWD_Unit_package.all;
+USE work.HDU_1_package.all;
+USE work.HDU_2_package.all;
+USE work.mux4to1_package.all;
+
+ENTITY MIPS_Pipeline IS
+	PORT (
+			);
+END MIPS_Pipeline;

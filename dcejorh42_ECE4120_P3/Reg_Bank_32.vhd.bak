@@ -1,0 +1,68 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE work.Reg32en_package.all;
+
+ENTITY Reg_Bank_32 IS
+GENERIC(N	: INTEGER := 32);
+	PORT (Clock,Reset						:	IN STD_LOGIC;	
+			E									:	IN STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+			Data								:	IN STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+			Q0,Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8	: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+			Q9,Q10,Q11,Q12,Q13,Q14,Q15	: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+			Q16,Q17,Q18,Q19,Q20,Q21,Q22: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+			Q23,Q24,Q25,Q26,Q27,Q28,Q29: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+			Q30,Q31							: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0));
+END Reg_Bank_32;
+
+ARCHITECTURE Structure OF Reg_Bank_32 IS
+	TYPE register_array IS ARRAY(0 TO N-1) OF STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+SIGNAL reg_file	: register_array;
+SIGNAL 
+BEGIN 
+	
+	REG0	: Reg32en PORT MAP(E(0),Clock,Reset,Data,reg_file(0)); 
+	REG1	: Reg32en PORT MAP(E(1),Clock,Reset,Data,reg_file(1));  
+	REG2	: Reg32en PORT MAP(E(2),Clock,Reset,Data,reg_file(2)); 
+	REG3	: Reg32en PORT MAP(E(3),Clock,Reset,Data,reg_file(3)); 
+	REG4	: Reg32en PORT MAP(E(4),Clock,Reset,Data,reg_file(4));  
+	REG5	: Reg32en PORT MAP(E(5),Clock,Reset,Data,reg_file(5));
+	REG6	: Reg32en PORT MAP(E(6),Clock,Reset,Data,reg_file(6)); 
+	REG7	: Reg32en PORT MAP(E(7),Clock,Reset,Data,reg_file(7));  
+	REG8	: Reg32en PORT MAP(E(8),Clock,Reset,Data,reg_file(8));
+	REG0	: Reg32en PORT MAP(E(0),Clock,Reset,Data,reg_file(9)); 
+	REG10	: Reg32en PORT MAP(E(10),Clock,Reset,Data,reg_file(10));  
+	REG11	: Reg32en PORT MAP(E(11),Clock,Reset,Data,reg_file(11)); 
+	REG12	: Reg32en PORT MAP(E(12),Clock,Reset,Data,reg_file(12)); 
+	REG13	: Reg32en PORT MAP(E(13),Clock,Reset,Data,reg_file(13));  
+	REG14	: Reg32en PORT MAP(E(14),Clock,Reset,Data,reg_file(14));
+	REG15	: Reg32en PORT MAP(E(15),Clock,Reset,Data,reg_file(15)); 
+	REG16	: Reg32en PORT MAP(E(16),Clock,Reset,Data,reg_file(16));  
+	REG17	: Reg32en PORT MAP(E(17),Clock,Reset,Data,reg_file(17));
+	REG18	: Reg32en PORT MAP(E(18),Clock,Reset,Data,reg_file(18));  
+	REG19	: Reg32en PORT MAP(E(19),Clock,Reset,Data,reg_file(19)); 
+	REG20	: Reg32en PORT MAP(E(20),Clock,Reset,Data,reg_file(20)); 
+	REG21	: Reg32en PORT MAP(E(21),Clock,Reset,Data,reg_file(21));  
+	REG22	: Reg32en PORT MAP(E(22),Clock,Reset,Data,reg_file(22));
+	REG23	: Reg32en PORT MAP(E(23),Clock,Reset,Data,reg_file(23)); 
+	REG24	: Reg32en PORT MAP(E(24),Clock,Reset,Data,reg_file(24));  
+	REG25	: Reg32en PORT MAP(E(25),Clock,Reset,Data,reg_file(25));
+	REG26	: Reg32en PORT MAP(E(26),Clock,Reset,Data,reg_file(26));  
+	REG27	: Reg32en PORT MAP(E(27),Clock,Reset,Data,reg_file(27)); 
+	REG28	: Reg32en PORT MAP(E(28),Clock,Reset,Data,reg_file(28)); 
+	REG29	: Reg32en PORT MAP(E(29),Clock,Reset,Data,reg_file(29));  
+	REG30	: Reg32en PORT MAP(E(30),Clock,Reset,Data,reg_file(30));
+	REG31	: Reg32en PORT MAP(E(31),Clock,Reset,Data,reg_file(31));
+	
+	Q0 <= reg_file(0); Q1 <= reg_file(1); Q2 <= reg_file(2); 
+	Q3 <= reg_file(3); Q4 <= reg_file(4); Q5 <= reg_file(5);
+	Q6 <= reg_file(6); Q7 <= reg_file(7); Q8 <= reg_file(8);
+	Q9 <= reg_file(9); Q10 <= reg_file(10); Q11 <= reg_file(11);
+	Q12 <= reg_file(12); Q13 <= reg_file(13); Q14 <= reg_file(14);
+	Q15 <= reg_file(15); Q16 <= reg_file(16); Q17 <= reg_file(17);
+	Q18 <= reg_file(18); Q19 <= reg_file(19); Q20 <= reg_file(20);
+	Q21 <= reg_file(21); Q22 <= reg_file(22); Q23 <= reg_file(23);
+	Q24 <= reg_file(24); Q25 <= reg_file(25); Q26 <= reg_file(26);
+	Q27 <= reg_file(27);	Q28 <= reg_file(28);	Q29 <= reg_file(29);
+	Q30 <= reg_file(30); Q31 <= reg_file(31);
+	
+END Structure;	

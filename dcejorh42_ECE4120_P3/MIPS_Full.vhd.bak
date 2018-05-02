@@ -1,0 +1,52 @@
+LIBRARY ieee;							 --Provide compiler with access to Library
+USE ieee.std_logic_1164.all;		 --Use all contents from package in ieee Library
+USE ieee.std_logic_arith.all;		 --Use all contents from package in ieee Library
+USE ieee.std_logic_unsigned.all;	 --Use all contents from package in ieee Library
+USE work.IFetch_package.all;
+USE work.RegisterFile_package.all;	
+USE work.SignExtend_package.all;
+USE work.ALU_package.all;
+USE work.mux2to1_package.all;
+USE work.mux32_package.all;
+USE work.proctypes_package.all;
+USE work.Adder32_package.all;
+USE work.DataMem_package.all;
+USE work.ShiftLeft2_package.all;
+USE work.Control_package.all;
+USE work.ALUcontrol_package.all;
+
+ENTITY MIPS_Full IS
+GENERIC(N : INTEGER := 32);
+	PORT (Clock,Reset	:  IN STD_LOGIC;
+			ALU_result	: BUFFER STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+			read_data_1,read_data_2	: BUFFER STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+			write_data	: BUFFER STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+			Instruction	: BUFFER STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+			PC				: BUFFER STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+			Branch,Jump : BUFFER STD_LOGIC;
+			MemRead,MemWrite : BUFFER STD_LOGIC;
+			RegWrite		: BUFFER STD_LOGIC;
+			Zero			: BUFFER STD_LOGIC);
+END MIPS_Full;
+
+ARCHITECTURE Structure OF MIPS_Full IS
+	SIGNAL	Extend_Value : STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+	SIGNAL	Addr : STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+	SIGNAL	Cons : STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+	SIGNAL	Data : STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+	SIGNAL	PC_i,PC_o : STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+BEGIN
+	PC <= PC_o;
+	IF_1 : IFetch_Stage PORT MAP(Clock,Reset,'0',Data,Cons,PC_i,PC_o,Instruction);
+	Control_U : Control PORT MAP();
+	Mux0_32_1 : mux32 PORT MAP();
+	Mux1_32_1 : mux32 PORT MAP();
+	Mux2_32_1 : mux32 PORT MAP();
+	Mux3_32_1 : mux32 PORT MAP();
+	Mux4_32_1 : mux32 PORT MAP();
+	
+	
+	
+	
+	
+	

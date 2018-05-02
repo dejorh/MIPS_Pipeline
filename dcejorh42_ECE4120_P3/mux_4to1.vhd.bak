@@ -1,0 +1,22 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_arith.all;
+USE ieee.std_logic_unsigned.all;
+
+ENTITY mux_4to1 IS
+GENERIC (N : INTEGER := 32);
+	PORT (S0,S1			: IN STD_LOGIC;
+			X0,X1,X2,X3	: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+			Y				: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0));
+END mux_4to1;
+
+ARCHITECTURE Behavior OF mux_4to1 IS
+	SIGNAL S	: STD_LOGIC_VECTOR(1 DOWNTO 0);
+BEGIN
+	S(1) <= S1; S(0) <= S0;
+	WITH CONV_INTEGER(S) SELECT 
+	Y <= X0 WHEN 0,
+		  X1 WHEN 1,
+		  X2 WHEN 2,
+		  X3 WHEN 3;
+END Behavior;

@@ -1,0 +1,32 @@
+LIBRARY ieee;										--Provide compiler with access to Library
+USE ieee.std_logic_1164.all;					--Use all contents from package in ieee Library
+USE work.IFetch_package.all;		--Use all contents from package in work Library
+
+
+ENTITY TB_IFetch IS								--Top-Level Entity Declaration%
+END ENTITY TB_IFetch;
+
+ARCHITECTURE TB_IFetch_Arch OF TB_IFetch IS
+	SIGNAL En, Reset : STD_LOGIC;  --TestBench Signal declaration -for some EntityInputs
+	SIGNAL Data, Instruction : STD_LOGIC_VECTOR(31 DOWNTO 0);
+	SIGNAL Clock : STD_LOGIC := '0';		--TestBench Signal initialization for Clock
+
+BEGIN
+	-- Port Mappings for the T-flipflop
+		TB_IF: IFetch_Stage PORT MAP(Clock, Reset, En, Data, Instruction);
+	Clock_Process: PROCESS
+	BEGIN
+			Clock <= NOT Clock after 50 ns;
+	END PROCESS;
+		
+	Testing_Process: PROCESS
+	BEGIN
+		T  <= '0',
+				'1' after 45 ns,
+				'0' after 45 ns,
+				'1' after 45 ns;
+		Reset <= '1',
+					'0' after 180 ns;
+		
+	END PROCESS;
+END ARCHITECTURE TB_IFetch_Arch;

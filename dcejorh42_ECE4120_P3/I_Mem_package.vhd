@@ -1,0 +1,15 @@
+LIBRARY ieee;						--Provide compiler with access to Library
+USE ieee.std_logic_1164.all;	--Use all contents from package in ieee Library
+
+PACKAGE I_Mem_package IS
+	COMPONENT I_Mem					--Component Declaration
+		PORT (aclr		: IN STD_LOGIC;
+				address	: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
+				clock		: IN STD_LOGIC;
+				data		: IN STD_LOGIC_VECTOR (31 DOWNTO 0);
+				rden		: IN STD_LOGIC;
+				wren		: IN STD_LOGIC;
+				q			: OUT STD_LOGIC_VECTOR (31 DOWNTO 0)
+	);
+	END COMPONENT;
+END I_Mem_package;

@@ -1,0 +1,82 @@
+LIBRARY ieee;							 --Provide compiler with access to Library
+USE ieee.std_logic_1164.all;		 --Use all contents from package in ieee Library
+USE ieee.std_logic_arith.all;		 --Use all contents from package in ieee Library
+USE ieee.std_logic_unsigned.all;	 --Use all contents from package in ieee Library
+USE work.PC_reg_package.all;
+USE work.ProgMem_package.all;
+USE work.RegisterFile_package.all;	
+USE work.SignExtend_package.all;
+USE work.ALU_package.all;
+USE work.mux2to1_package.all;
+USE work.mux32_package.all;
+USE work.proctypes_package.all;
+USE work.Adder32_package.all;
+USE work.DataMem_package.all;
+USE work.ShiftLeft2_package.all;
+USE work.Control_package.all;
+USE work.ALUcontrol_package.all;
+
+ENTITY TB_MIPS IS					--Top-Level Entity Declaration%
+GENERIC(N : INTEGER := 32);
+END ENTITY TB_MIPS;
+
+ARCHITECTURE Structure OF TB_MIPS IS
+	--SIGNAL	Extend_Value : STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+	SIGNAL Addr : STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+	SIGNAL Cons : STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+	SIGNAL Data : STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+	SIGNAL PC_i,PC_o,PC_plus_4 : STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+				-- ALU Output Vector
+	SIGNAL ALU_result	: STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+						-- Data to be read from read registers
+	SIGNAL read_data_1,read_data_2	: STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+	SIGNAL write_data	: STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+	SIGNAL Instruction	: STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+	SIGNAL PC				: STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+	SIGNAL Branch,Jump : STD_LOGIC;
+	SIGNAL MemRead,MemWrite : STD_LOGIC;
+	SIGNAL RegWrite		: STD_LOGIC;
+						-- Zero signal, also an ouput
+	SIGNAL Zero			: STD_LOGIC;
+						-- Write Register address numbers
+	SIGNAL write_register : STD_LOGIC_VECTOR(4 DOWNTO 0);
+	SIGNAL Reg_d_0,Reg_d_1 : STD_LOGIC_VECTOR(4 DOWNTO 0);
+						-- Read Register address numbers 
+	SIGNAL read_register_1,read_register_2: STD_LOGIC_VECTOR(4 DOWNTO 0);
+						-- Immediate Value for I-Type Instructions
+	SIGNAL Immediate_value					  : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);
+						-- The Sign-Extended value
+	SIGNAL Extend_value						  : STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+	SIGNAL Extend_shift						  : STD_LOGIC_VECTOR(N+1 DOWNTO 0);
+						-- Select Vector for ALU operations
+	SIGNAL ALU_ctrl							  : STD_LOGIC_VECTOR(3 DOWNTO 0);
+						-- ALU Input Vectors A and B
+	SIGNAL A,B									  : STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+	SIGNAL MemtoReg		: STD_LOGIC;  -- for writing to register from memory
+	SIGNAL ALUOp			: STD_LOGIC_VECTOR(1 DOWNTO 0);  --for ALU control unit
+				--picks between sign-extended value and read_data_2
+	SIGNAL ALU_Src,PC_Src		  : STD_LOGIC; --Input Signals
+	SIGNAL RegDst		: STD_LOGIC;  -- RegDst picks destination Write-Back Reg
+	SIGNAL J_immediate : STD_LOGIC_VECTOR(N-7 DOWNTO 0);
+	SIGNAL J_immed_shift	: STD_LOGIC_VECTOR(N-5 DOWNTO 0);
+	SIGNAL Add_const : STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+	SIGNAL Branch_addr : STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+	SIGNAL Jump_address	: STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+	SIGNAL PC_plus_offset :STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+	SIGNAL read_data	: STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+	
+	COMPONENT Program_Mem						--Program_Mem entity used as a Component
+		PORT (address		: IN STD_LOGIC_VECTOR (7 DOWNTO 0);	--Input declaration
+			   clock		: IN STD_LOGIC  := '1';
+				data		: IN STD_LOGIC_VECTOR (31 DOWNTO 0);
+				wren		: IN STD_LOGIC ;
+			   Q			: OUT STD_LOGIC_VECTOR(31 DOWNTO 0));	--Output declaration
+	END COMPONENT;
+	
+	COMPONENT Adder32						--Adder32 entity used as a Component
+		PORT (A			 : IN STD_LOGIC_VECTOR(31 DOWNTO 0);	--Input declaration 
+				B		: IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+				Result		 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0));
+	END COMPONENT;
+	
+	

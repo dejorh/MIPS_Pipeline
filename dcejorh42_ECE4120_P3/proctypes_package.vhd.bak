@@ -1,0 +1,9 @@
+LIBRARY ieee;						--Provide compiler with access to Library
+USE ieee.std_logic_1164.all;	--Use all contents from package in ieee Library
+
+package proctypes_package is 
+		-- define a 4-Byte word
+subtype T_SLV_8  is STD_LOGIC_VECTOR(31 downto 0);        
+		-- define a new unconstrained vector of Bytes.
+type    T_SLVV_8 is array(NATURAL range 0 to 31) of T_SLV_8;  
+end proctypes_package;

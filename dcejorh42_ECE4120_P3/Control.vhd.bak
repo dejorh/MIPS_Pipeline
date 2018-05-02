@@ -1,0 +1,44 @@
+LIBRARY ieee;							 --Provide compiler with access to Library
+USE ieee.std_logic_1164.all;		 --Use all contents from package in ieee Library
+
+ENTITY Control IS
+	PORT (Opcode		:  IN STD_LOGIC_VECTOR(5 DOWNTO 0);
+			Clock,Reset	: OUT STD_LOGIC;
+			RegDst		: OUT STD_LOGIC;
+			Jump			: OUT STD_LOGIC;
+			Branch		: OUT STD_LOGIC;
+			MemRead		: OUT STD_LOGIC;
+			MemtoReg		: OUT STD_LOGIC;
+			ALUOp			: OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
+			MemWrite		: OUT STD_LOGIC;
+			ALUSrc		: OUT STD_LOGIC;
+			RegWrite		: OUT STD_LOGIC);
+END Control;
+
+ARCHITECTURE Behavior OF Control IS
+	SIGNAL Lw,Sw,R_format,Beq,Bne,J	: STD_LOGIC;
+BEGIN 
+	R_format <= '1' WHEN Opcode="000000" ELSE '0';
+	Lw			<= '1' WHEN Opcode="100011" ELSE '0';
+	Sw			<= '1' WHEN Opcode="101011" ELSE '0';
+	Beq		<= '1' WHEN Opcode="000100" ELSE '0';
+	Bne		<= '1' WHEN Opcode="000101" ELSE '0';
+	J			<= '1' WHEN Opcode="000010" ELSE '0';
+	
+	PROCESS(Clock)
+	BEGIN
+		IF Clock'EVENT AND Clock = '1' THEN 
+		-- The Table justifying this mapping is given in Figures 4.18 and 4.22 --
+			RegDst		<= R_format;		
+			Branch		<= Beq OR Bne;
+			Jump			<= J;
+			MemRead		<= Lw;
+			MemtoReg		<= Lw;
+			ALUOp(1)		<= R_format;
+			ALUOp(0)		<= Beq OR Bne;
+			MemWrite		<= Sw;
+			ALUSrc		<= Lw OR Sw;
+			RegWrite		<= R_format OR Lw;
+		END IF;
+	END PROCESS;	
+END Behavior;

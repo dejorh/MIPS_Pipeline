@@ -1,0 +1,14 @@
+LIBRARY ieee;							--Provide compiler with access to Library
+USE ieee.std_logic_1164.all;		--Use all contents from package in ieee Library
+USE ieee.std_logic_arith.all;		--Use all contents from package in ieee Library
+USE ieee.std_logic_unsigned.all;	--Use all contents from package in ieee Library
+USE work.IFetch_package.all;		--Use all contents from package in work Library
+USE work.IDecode_package.all;		--Use all contents from package in work Library
+USE work.IExecute_package.all;	--Use all contents from package in work Library
+
+ENTITY TB_IF_ID_EX IS					--Top-Level Entity Declaration%
+END ENTITY TB_IF_ID_EX;
+
+ARCHITECTURE TB_IF_ID_EX_Arch OF TB_IF_ID_EX IS
+BEGIN
+END TB_IF_ID_EX_Arch;
